@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>隐私政策 · Grain</title>
+<meta name="description" content="Grain 胶片相机 App 隐私政策：我们如何收集、使用与保护你的信息。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__dots"><i></i><i></i><i></i></span>
+      Grain
+    </a>
+    <span class="spacer"></span>
+    <div class="lang-switch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-lang="zh" class="active">中文</button>
+      <button type="button" data-set-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ========================= 中文 ========================= -->
+<div data-lang-block="zh">
+
+  <div class="doc-head">
+    <p class="kicker">Privacy Policy</p>
+    <h1>隐私政策</h1>
+    <p class="meta">
+      <span>生效日期：2026 年 11 月 7 日</span>
+      <span>版本：1.0</span>
+      <span>运营者：PixelOrange</span>
+    </p>
+  </div>
+
+  <p class="lead">一句话概括：<strong>你的照片属于你。</strong>Grain 不需要注册账号，照片不会上传到我们的服务器，核心的拍摄与显影全部在你的设备本地完成。</p>
+
+  <h2>1. 适用范围</h2>
+  <p>本政策适用于 Grain 胶片相机应用（以下简称「本 App」）。它说明了我们在你使用本 App 的过程中如何处理与个人信息相关的数据，以及你可以如何管理这些数据。</p>
+
+  <h2>2. 我们收集与不收集的信息</h2>
+
+  <h3>2.1 我们不收集的信息</h3>
+  <ul>
+    <li>不要求注册账号，不收集你的姓名、手机号、邮箱或通讯录</li>
+    <li>不上传、不存储、不读取你的照片内容到任何服务器；照片仅在你授权后于本机被读取，用于显影、加框与保存</li>
+    <li>不收集广告标识符（IDFA），不进行跨 App 追踪，不接入第三方广告或统计分析 SDK</li>
+    <li>不收集短信、通话记录、剪贴板内容，也不在后台持续获取你的位置</li>
+  </ul>
+
+  <h3>2.2 因功能需要在设备本地处理的信息</h3>
+  <p>下表列出本 App 会用到的数据、触发场景，以及数据是否会离开你的设备。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>信息类型</th>
+        <th>触发场景</th>
+        <th>处理方式</th>
+        <th>是否离开设备</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>相机画面</td>
+        <td>你在拍摄页按下快门</td>
+        <td>在本地实时叠加胶片滤镜、颗粒、相框与水印</td>
+        <td>否</td>
+      </tr>
+      <tr>
+        <td>相册照片</td>
+        <td>你导入照片进行编辑</td>
+        <td>在你授权后于本地读取并显影</td>
+        <td>否</td>
+      </tr>
+      <tr>
+        <td>成片文件</td>
+        <td>你保存照片</td>
+        <td>写入本机系统相册；在详情页删除时会同步删除系统相册中的对应照片</td>
+        <td>否</td>
+      </tr>
+      <tr>
+        <td>拍摄位置</td>
+        <td>你开启位置信息并授权定位后拍摄</td>
+        <td>写入照片的 EXIF 元数据，不作为其他用途</td>
+        <td>否</td>
+      </tr>
+      <tr>
+        <td>应用设置</td>
+        <td>选择胶卷、相框、语言、水印等偏好</td>
+        <td>保存在设备本地的 UserDefaults</td>
+        <td>否</td>
+      </tr>
+      <tr>
+        <td>购买状态</td>
+        <td>你购买或恢复订阅</td>
+        <td>通过 Apple StoreKit 读取权益状态与交易标识</td>
+        <td>由 Apple 处理</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>2.3 系统权限说明</h3>
+  <ul>
+    <li><strong>相机</strong>：用于取景与拍摄照片。</li>
+    <li><strong>照片（仅添加）</strong>：用于将成片保存到你的系统相册。</li>
+    <li><strong>照片（读取）</strong>：用于从相册导入照片进行显影；在你于详情页删除照片时，同步删除系统相册中的对应副本。</li>
+    <li><strong>定位（使用期间）</strong>：用于将拍摄地点写入照片 EXIF。不授权不影响其他功能；本 App 不会在后台定位。</li>
+    <li><strong>麦克风</strong>：仅在你使用与视频录制相关的功能时调用；若当前版本未提供该功能则不会触发。</li>
+  </ul>
+  <p>以上权限都可以随时在 iOS「设置 → Grain」中关闭或重新开启。</p>
+
+  <h2>3. 信息的使用目的</h2>
+  <p>我们仅在实现上述功能所必需的范围内处理数据，用于：完成拍摄与显影、保存与管理你的照片、记住你的使用偏好、校验订阅权益。我们不会将这些数据用于广告投放、用户画像，或出售、出租给任何第三方。</p>
+
+  <h2>4. 第三方服务</h2>
+  <ul>
+    <li><strong>Apple（App Store 内购）</strong>：订阅的购买、续订、支付与退款均由 Apple 完成。我们不接触、不存储你的支付卡信息，仅从 StoreKit 读取「是否拥有权益」的结果。该部分处理适用 Apple 的隐私政策：
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>。</li>
+    <li><strong>iCloud 与设备备份</strong>：如果你开启系统备份，本 App 的本地数据可能随备份由 Apple 存储，这部分由你在系统设置中控制。</li>
+    <li><strong>系统分享面板</strong>：当你主动分享照片时，照片由你选择的目标 App 处理，请留意对方的隐私政策。</li>
+  </ul>
+  <p class="note">本 App 未集成任何第三方广告、统计或数据分析 SDK。</p>
+
+  <h2>5. 存储位置与保存期限</h2>
+  <p>上述数据均保存在你的设备本地，我们不在服务器上保存你的个人信息，因此不存在服务端的数据保留期限。卸载本 App 会删除其本地数据；已保存到系统相册或已通过系统分享发送出去的照片，需要你自行删除。</p>
+
+  <h2>6. 你的权利</h2>
+  <ul>
+    <li><strong>查看与修改</strong>：可随时在本 App 内调整各项设置。</li>
+    <li><strong>删除</strong>：在照片详情页删除照片（同时删除系统相册中的副本），或直接卸载本 App。</li>
+    <li><strong>撤回授权</strong>：在 iOS「设置 → Grain」中关闭相机、照片、定位等权限。</li>
+    <li><strong>咨询与投诉</strong>：由于我们不在服务器保存你的个人信息，通常无需向我们提出数据访问或删除请求；如仍有疑问，请通过第 10 条联系我们。</li>
+  </ul>
+
+  <h2>7. 未成年人保护</h2>
+  <p>本 App 不面向 14 周岁以下的儿童单独提供服务，也不会主动收集儿童的个人信息。若你是未成年人，请在监护人的指导下阅读本政策并使用本 App。</p>
+
+  <h2>8. 数据安全</h2>
+  <p>照片与设置只在本机处理，我们通过 iOS 应用沙盒与系统权限机制降低数据被其他应用访问的风险。请妥善保管你的设备与锁屏密码；设备丢失或转让他人前，建议先卸载本 App 并清除相册中的相关照片。</p>
+
+  <h2>9. 本政策的更新</h2>
+  <p>当功能调整或法律法规变化时，我们可能更新本政策，并在本页面标注新的生效日期与版本号。若变更会实质扩大我们对数据的处理范围，我们会在 App 内以显著方式提示你，并在必要时重新征得同意。</p>
+
+  <h2>10. 联系我们</h2>
+  <div class="contact-card">
+    <p>对本政策有任何疑问、意见或投诉，请联系：</p>
+    <p><strong>邮箱：</strong><a href="mailto:support@grain.app">support@grain.app</a></p>
+    <p>我们会在收到你的请求后 15 个工作日内回复。</p>
+  </div>
+
+  <h2>11. 中国大陆地区补充说明</h2>
+  <p>依据《中华人民共和国个人信息保护法》及相关规定：</p>
+  <ul>
+    <li>我们处理你的照片、位置等信息，均基于你在系统弹窗中作出的明示授权，处理目的仅限于本政策第 3 条所述范围。</li>
+    <li>我们不会将你的个人信息传输至境外。订阅相关的支付处理由 Apple 依其自身政策完成。</li>
+    <li>你有权查阅、复制、更正、删除你的个人信息，或撤回已作出的授权；行使方式见第 6 条。</li>
+    <li>若你认为我们的处理行为损害了你的合法权益，可向监管部门投诉，也可通过第 10 条与我们联系。</li>
+  </ul>
+
+</div>
+
+<!-- ========================= English ========================= -->
+<div data-lang-block="en">
+
+  <div class="doc-head">
+    <p class="kicker">Privacy Policy</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <span>Effective: November 7, 2026</span>
+      <span>Version 1.0</span>
+      <span>Operator: PixelOrange</span>
+    </p>
+  </div>
+
+  <p class="lead">In one sentence: <strong>your photos belong to you.</strong> Grain requires no account, never uploads your photos to our servers, and performs all capture and film processing locally on your device.</p>
+
+  <h2>1. Scope</h2>
+  <p>This policy applies to the Grain film camera app (the "App"). It explains how we handle data related to your personal information while you use the App, and how you can manage that data.</p>
+
+  <h2>2. What we collect and what we don't</h2>
+
+  <h3>2.1 Information we do not collect</h3>
+  <ul>
+    <li>No account registration; we do not collect your name, phone number, email address, or contacts.</li>
+    <li>We never upload, store, or inspect your photo content on any server. Photos are read locally, on your device, only after you grant permission.</li>
+    <li>We do not collect the advertising identifier (IDFA), do not track you across apps, and include no third-party advertising or analytics SDK.</li>
+    <li>We do not access messages, call logs, or clipboard contents, and we never track your location in the background.</li>
+  </ul>
+
+  <h3>2.2 Information processed locally to provide features</h3>
+  <p>The table below lists the data the App uses, when it is used, and whether it ever leaves your device.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>When</th>
+        <th>How it is processed</th>
+        <th>Leaves device</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Camera feed</td>
+        <td>You press the shutter</td>
+        <td>Film filters, grain, frames, and watermark are rendered locally</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Library photos</td>
+        <td>You import a photo to edit</td>
+        <td>Read locally, after you grant permission</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Rendered photos</td>
+        <td>You save a photo</td>
+        <td>Written to your system photo library; deleting a photo in the detail view also removes the copy in your library</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Capture location</td>
+        <td>You enable location and grant permission</td>
+        <td>Embedded into the photo's EXIF metadata; used for nothing else</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>App preferences</td>
+        <td>Selecting film, frame, language, watermark, etc.</td>
+        <td>Stored in local UserDefaults on your device</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Purchase status</td>
+        <td>You purchase or restore a subscription</td>
+        <td>Entitlement status and transaction identifiers read via Apple StoreKit</td>
+        <td>Handled by Apple</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>2.3 System permissions</h3>
+  <ul>
+    <li><strong>Camera</strong> — to preview and capture photos.</li>
+    <li><strong>Photos (add only)</strong> — to save rendered photos to your library.</li>
+    <li><strong>Photos (read)</strong> — to import photos for processing, and to delete the library copy when you delete a photo in the detail view.</li>
+    <li><strong>Location (while using)</strong> — to embed the capture location into a photo's EXIF metadata. Declining does not affect other features, and the App never tracks location in the background.</li>
+    <li><strong>Microphone</strong> — used only if you invoke a video-recording feature; it is never triggered if the current version does not offer one.</li>
+  </ul>
+  <p>All permissions can be changed at any time in iOS Settings → Grain.</p>
+
+  <h2>3. How we use information</h2>
+  <p>We process data only as far as necessary to capture and render photos, save and manage them, remember your preferences, and verify subscription entitlements. We do not use this data for advertising or profiling, and we never sell or rent it to third parties.</p>
+
+  <h2>4. Third-party services</h2>
+  <ul>
+    <li><strong>Apple (In-App Purchase)</strong> — purchases, renewals, payments, and refunds are handled entirely by Apple. We never receive or store your payment card details; StoreKit only returns whether an entitlement is active. Apple's privacy policy applies to that processing:
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</li>
+    <li><strong>iCloud and device backups</strong> — if you enable system backups, the App's local data may be included and stored by Apple, under your control in system settings.</li>
+    <li><strong>System share sheet</strong> — when you share a photo, it is handled by the app you choose. Please review that app's privacy policy.</li>
+  </ul>
+  <p class="note">The App integrates no third-party advertising, analytics, or data-broker SDK.</p>
+
+  <h2>5. Storage location and retention</h2>
+  <p>All data described above stays on your device. We hold no personal information on servers, so there is no server-side retention period. Uninstalling the App deletes its local data; photos already saved to your library or sent through the share sheet must be deleted by you.</p>
+
+  <h2>6. Your rights</h2>
+  <ul>
+    <li><strong>Access and modify</strong> — adjust any setting inside the App at any time.</li>
+    <li><strong>Delete</strong> — delete photos in the detail view (which also removes the library copy), or uninstall the App.</li>
+    <li><strong>Withdraw consent</strong> — revoke camera, photo, or location permission in iOS Settings → Grain.</li>
+    <li><strong>Questions or complaints</strong> — because we hold no personal information on servers, access and deletion requests are usually unnecessary. If you still have concerns, contact us using Section 10.</li>
+  </ul>
+
+  <h2>7. Children</h2>
+  <p>The App is not directed to children under 14 and does not knowingly collect personal information from them. If you are a minor, please read this policy and use the App under the guidance of a guardian.</p>
+
+  <h2>8. Security</h2>
+  <p>Photos and settings are processed only on your device, and iOS app sandboxing and permission controls limit access by other apps. Please keep your device and passcode secure, and uninstall the App and remove related photos before selling or transferring your device.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this policy when features or regulations change, and will post the new effective date and version on this page. If a change materially expands how we handle data, we will notify you prominently in the App and, where required, ask for consent again.</p>
+
+  <h2>10. Contact us</h2>
+  <div class="contact-card">
+    <p>For any question, comment, or complaint about this policy:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@grain.app">support@grain.app</a></p>
+    <p>We respond within 15 business days of receiving your request.</p>
+  </div>
+
+  <h2>11. Additional notice for Mainland China</h2>
+  <p>In accordance with the Personal Information Protection Law of the People's Republic of China:</p>
+  <ul>
+    <li>We process your photos, location, and related data on the basis of the explicit authorization you give in the system prompts, and only for the purposes described in Section 3.</li>
+    <li>We do not transfer your personal information outside Mainland China. Subscription payment processing is performed by Apple under its own policies.</li>
+    <li>You have the right to access, copy, correct, or delete your personal information, and to withdraw consent, as described in Section 6.</li>
+    <li>If you believe our processing infringes your rights, you may lodge a complaint with a supervisory authority or contact us using Section 10.</li>
+  </ul>
+
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© 2026 PixelOrange</span>
+    <a href="index.html">首页 / Home</a>
+    <a href="terms.html">用户协议 / Terms</a>
+    <a href="mailto:support@grain.app">support@grain.app</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var KEY = 'grain-legal-lang';
+  var btns = document.querySelectorAll('[data-set-lang]');
+
+  function setLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].classList.toggle('active', btns[i].getAttribute('data-set-lang') === lang);
+    }
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  var initial = saved || ((navigator.language || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+  setLang(initial);
+
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
+      setLang(this.getAttribute('data-set-lang'));
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
