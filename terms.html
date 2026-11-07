@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-lang="zh">
+<html lang="en" data-lang="en" data-title-en="Terms of Use · Grain" data-title-zh="用户协议 · Grain">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>用户协议 · Grain</title>
+<title>Terms of Use · Grain</title>
 <meta name="description" content="Grain 胶片相机 App 用户协议：服务内容、订阅条款与责任范围。">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -34,12 +34,12 @@
     <p class="meta">
       <span>生效日期：2026 年 11 月 7 日</span>
       <span>版本：1.0</span>
-      <span>运营者：PixelOrange</span>
+      <span>运营者：Guzi</span>
     </p>
   </div>
 
   <h2>1. 协议的接受</h2>
-  <p>本协议是你与 Grain（以下简称「本 App」）运营者 PixelOrange（以下简称「我们」）之间就使用本 App 达成的约定。下载、安装或使用本 App，即表示你已阅读并同意本协议及<a href="privacy.html">《隐私政策》</a>。如果你不同意，请停止使用并卸载本 App。</p>
+  <p>本协议是你与 Grain（以下简称「本 App」）运营者 Guzi（以下简称「我们」）之间就使用本 App 达成的约定。下载、安装或使用本 App，即表示你已阅读并同意本协议及<a href="privacy.html">《隐私政策》</a>。如果你不同意，请停止使用并卸载本 App。</p>
   <p>若你未满 18 周岁，请在法定监护人的陪同下阅读本协议，并在取得其同意后使用本 App。</p>
 
   <h2>2. 服务说明</h2>
@@ -109,7 +109,7 @@
   <h2>14. 联系我们</h2>
   <div class="contact-card">
     <p>对本协议有任何疑问，请联系：</p>
-    <p><strong>邮箱：</strong><a href="mailto:support@grain.app">support@grain.app</a></p>
+    <p><strong>邮箱：</strong><a href="mailto:zbwxmini001@163.com">zbwxmini001@163.com</a></p>
     <p>我们会在收到你的请求后 15 个工作日内回复。</p>
   </div>
 
@@ -124,12 +124,12 @@
     <p class="meta">
       <span>Effective: November 7, 2026</span>
       <span>Version 1.0</span>
-      <span>Operator: PixelOrange</span>
+      <span>Operator: Guzi</span>
     </p>
   </div>
 
   <h2>1. Acceptance</h2>
-  <p>These terms form an agreement between you and PixelOrange ("we", "us"), the operator of the Grain film camera app (the "App"). By downloading, installing, or using the App, you confirm that you have read and agree to these terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, please stop using the App and uninstall it.</p>
+  <p>These terms form an agreement between you and Guzi ("we", "us"), the operator of the Grain film camera app (the "App"). By downloading, installing, or using the App, you confirm that you have read and agree to these terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, please stop using the App and uninstall it.</p>
   <p>If you are under 18, please read these terms with your legal guardian and use the App only with their consent.</p>
 
   <h2>2. The service</h2>
@@ -199,7 +199,7 @@
   <h2>14. Contact us</h2>
   <div class="contact-card">
     <p>Questions about these terms:</p>
-    <p><strong>Email:</strong> <a href="mailto:support@grain.app">support@grain.app</a></p>
+    <p><strong>Email:</strong> <a href="mailto:zbwxmini001@163.com">zbwxmini001@163.com</a></p>
     <p>We respond within 15 business days of receiving your request.</p>
   </div>
 
@@ -209,10 +209,10 @@
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <span>© 2026 PixelOrange</span>
+    <span>© 2026 Guzi</span>
     <a href="index.html">首页 / Home</a>
     <a href="privacy.html">隐私政策 / Privacy</a>
-    <a href="mailto:support@grain.app">support@grain.app</a>
+    <a href="mailto:zbwxmini001@163.com">zbwxmini001@163.com</a>
   </div>
 </footer>
 
@@ -227,12 +227,15 @@
     for (var i = 0; i < btns.length; i++) {
       btns[i].classList.toggle('active', btns[i].getAttribute('data-set-lang') === lang);
     }
+    var title = document.documentElement.getAttribute(
+      lang === 'zh' ? 'data-title-zh' : 'data-title-en');
+    if (title) document.title = title;
     try { localStorage.setItem(KEY, lang); } catch (e) {}
   }
 
   var saved = null;
   try { saved = localStorage.getItem(KEY); } catch (e) {}
-  var initial = saved || ((navigator.language || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+  var initial = saved || 'en';
   setLang(initial);
 
   for (var i = 0; i < btns.length; i++) {
